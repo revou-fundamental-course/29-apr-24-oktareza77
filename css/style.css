@@ -1,0 +1,59 @@
+.navigation-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 32px 12px 32px;
+    background-color: tomato;
+}
+
+.navigation-container>nav>button{
+    height: 32px;
+    border: solid black;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif, 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+}
+
+.logo{
+    background-image: url(../asset/Logo-RevoU-5.png); 
+    background-size: cover; 
+    height: 32px; 
+    width: 32px;
+}
+
+.content-container>header{
+    text-align: center;
+}
+
+.core-content{
+    display: flex;
+}
+
+.core-item{
+    height: 200px;
+    width: 100%;
+    border: 1px solid;
+    margin: 10px;
+}
+
+.core-item>header>h2{
+    text-align: center;
+}
+
+.item-right{
+    background-color: aliceblue;
+    border: 1px none;
+    border-radius: 8px;    
+}
+
+.item-form{
+    text-align: center;
+}
+
+.item-form>input{
+    height: 32px;
+    width: 50%;
+    margin-left: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
