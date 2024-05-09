@@ -1,3 +1,19 @@
+//Validation
+function validation(){
+  let name = document.getElementById('name').value;
+  if (name == '' || name == null) {
+    document.getElementById('name').style.border = '2px solid red';
+    alert('Inputan anda kosong, periksa kembali inputan anda');
+  }else{
+    alert('Welcome ' + name);
+    console.log(name);
+  }
+}
+
+document.getElementById("send-btn").addEventListener('click', () => validation())
+
+
+//Slide Show
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -25,6 +41,10 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+setInterval(() => plusSlides(1), 4000);
+
+
+// Navigation Activation
 // JavaScript untuk menampilkan halaman yang sesuai saat tautan diklik
 document.addEventListener('DOMContentLoaded', function() {
     // Fungsi untuk menampilkan halaman yang sesuai
