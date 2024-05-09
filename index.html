@@ -10,19 +10,18 @@
     <header class="navigation-container">
         <div class="logo"></div>
         <nav>
-            <ul>
+            <!-- <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#package">Our Package</a></li>
                 <li><a href="">Call Us</a></li>
-            </ul>
-            <!-- <button onclick="window.location.href='#home'">Home</button>
-            <button onclick="window.location.href='#package'">Our Package</button>
-            <button onclick="window.location.href='#'">Call Us</button> -->
+            </ul> -->
+            <button onclick="window.location.href='#'" id="home">Home</button>
+            <button onclick="window.location.href='#'" id="OP">Our Package</button>
+            <button onclick="window.location.href='#'" id="CU">Call Us</button>
         </nav>
-</header>
-<hr>
-<div class="page on" id="home">
+    </header>
     <article class="content-container">
+        <hr>
         <header>
             <h1>Your Trusted Travel Agent's</h1>
             <h3>Your Happiner is Our Happines</h3>
@@ -34,21 +33,21 @@
                 <div class="slideshow-container">
 
                     <div class="mySlides fade">
-                      <div class="numbertext">1 / 3</div>
-                      <img src="asset/south-korea.jpg" style="width:100%; border-radius: 10px;">
-                      <div class="text">South Korea</div>
+                    <div class="numbertext">1 / 3</div>
+                    <img src="asset/south-korea.jpg" style="width:100%; border-radius: 10px;">
+                    <div class="text">South Korea</div>
                     </div>
                     
                     <div class="mySlides fade">
-                      <div class="numbertext">2 / 3</div>
-                      <img src="asset/London_Skyline_(125508655).jpeg" style="width:100%; border-radius: 10px;">
-                      <div class="text">England</div>
+                    <div class="numbertext">2 / 3</div>
+                    <img src="asset/London_Skyline_(125508655).jpeg" style="width:100%; border-radius: 10px;">
+                    <div class="text">England</div>
                     </div>
                     
                     <div class="mySlides fade">
-                      <div class="numbertext">3 / 3</div>
-                      <img src="asset/gunung-fuji-jepang.jpeg" style="width:100%; border-radius: 10px;">
-                      <div class="text">Japan</div>
+                    <div class="numbertext">3 / 3</div>
+                    <img src="asset/gunung-fuji-jepang.jpeg" style="width:100%; border-radius: 10px;">
+                    <div class="text">Japan</div>
                     </div>
                     
                     <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -58,9 +57,9 @@
                     <br>
                     
                     <div style="text-align:center">
-                      <span class="dot" onclick="currentSlide(1)"></span> 
-                      <span class="dot" onclick="currentSlide(2)"></span> 
-                      <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
                     </div>
                 
                 <section class="item-article">
@@ -109,29 +108,71 @@
                     <input type="text" id="name" placeholder="first and last name" required>
                     <label>Email Address</label>
                     <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
-                    <label>What are you interested in?</label>
+                    <label>Pick your Destination?</label>
                     <select name="location" id="location" placeholder="Select Option" required>
-                        <option value="">Select Option</option>
-                        <option value="">London</option>
-                        <option value="">Korea</option>
-                        <option value="">Japan</option>
+                        <option value="" style="font-style: italic;">Select Option</option>
+                        <option value="london">London</option>
+                        <option value="korea">Korea</option>
+                        <option value="japan">Japan</option>
                     </select>
                     <button type="button" id="send-btn">SEND</button>
                 </form>
             </div>
         </section>
     </article>
-</div>
-
-<div class="page" id="package">
-    <article class="content-container">
+    <article class="content-container2">
         <header>
-            <h1>Your Trusted Travel Agent's</h1>
-            <h3>Your Happiner is Our Happines</h3>
+            <h1>Our Package only for you</h1>
         </header>
-    </article>
-</div>
 
+        <section class="core-content2">
+
+            <div class="core-item2 item-top">
+                <div class="package">
+                    <div class="image" style="background-image: url(asset/gunung-fuji-jepang.jpeg);"></div>
+                    <h2>Gunung Fuji, Japan <br> Gunung fuji merupakan destinasi wisata yang sering dikunjungi turis saat sedang wisata ke negara japan</h2>
+                </div>
+                <div class="package">
+                    <div class="image" style="background-image: url(asset/south-korea.jpg);"></div>
+                    <h2>South Korea <br> South Korea merupakan destinasi wisata yang sangat digemari banyak turis karena dunia saat ini sedang demam KPOP</h2>
+                </div>
+                <div class="package">
+                    <div class="image" style="background-image: url(asset/London_Skyline_\(125508655\).jpeg);"></div>
+                    <h2>London, United Kingdom <br> London merupakan destinasi wisata yang sering dikunjungi oleh banyak orang karena wisatawan senang menonton sepak bola inggris</h2>
+                </div>
+            </div>
+            <hr class="strip2">
+            <div class="core-item2 item-bottom">
+                <div class="package">
+                    <div class="image" style="background-image: url(asset/Tempat\ Wisata\ di\ Indonesia\ Bali.jpg);"></div>
+                    <h2>Bali, Indonesia <br> Bali merupakan destinasi yang diminati banyak orang, orang-orang domestik atau non domestik sering ke bali karena keindahan alamnya yang sangat memukau</h2>
+                </div>
+                <div class="package">
+                    <div class="image" style="background-image: url(asset/Colosium\ italia.jpg);"></div>
+                    <h2>Colloseum, Italian <br> Colloseum merupakan pilihan wisata lainnya yang ingin banyak orang kunjungi sekali seumur hidup, karena tempatnya yang sangat indah dan sangat menarik perhatian bagi banyak orang</h2>
+                </div>
+                <div class="package">
+                    <div class="image" style="background-image: url(asset/London_Skyline_\(125508655\).jpeg);"></div>
+                    <h2>Paris, France <br> Paris merupakan destinasi wisata yang sering dikunjungi banyak turis, terutama destinasi wisatanya yang terkenal yaitu Menara Eifel</h2>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section class="core-content3">
+            <h1>Apabila ada pertanyaan terkait package perjalan Travel silahkan Klik Tombol di bawah</h1>
+            <h3>Tombol Bantuan ini akan membantu kamu dalam memilih package perjalanan yang anda inginkan, jadi buruan segera contact Us</h3>
+            <button type="button" id="contact">Contact Us</button>
+        </section>
+        <hr>
+    </article>
+
+    <footer class="footer">
+        <div class="logo-footer"></div>
+        <div class="end">
+            <h3>Terms of Service Privacy Policy <br> &copy; 2024 - Revou </h3>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>
