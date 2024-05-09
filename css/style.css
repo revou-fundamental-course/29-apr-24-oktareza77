@@ -30,11 +30,11 @@ body{
 
 .navigation-container>nav>ul{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     text-align: center;
 }
 .navigation-container>nav>ul>li{
-    height: 32px;
+    height: 30px;
     text-align: center;
     border: solid #E8DFCA;
     border-radius: 4px;
@@ -70,6 +70,15 @@ body{
     display: flex;
 }
 
+@media only screen and (max-width: 480px){
+    .core-content{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+    }
+}
+
 .core-item{
     height: 100%;
     width: 100%;
@@ -80,8 +89,16 @@ body{
     text-align: start;
 }
 
-.mySlides {display: none}
-img {vertical-align: middle;}
+.mySlides {
+    display: none;
+    background-position: center;
+}
+img {
+    vertical-align: middle;
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -189,10 +206,115 @@ img {vertical-align: middle;}
     font-size: 18px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: grey;
+    text-align: center;
+}
+
+.icon{
+    display: flex;
+    /* flex-direction: row; */
+    /* border: 2px solid #f2f2f2; */
+}
+
+.icon>h2{
+    background-image: url(../asset/icon-orang.jpeg);
+    width: 62px;
+    height: 62px;
+    background-size: cover;
+    margin-left: 50px;
+    margin-right: 20px;
+    border-radius: 30px;
+}
+
+.icon>div>h4{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: -15px;
+    color: #f2f2f2;
+}
+
+.icon>div>h5{
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #717171;
+}
+
+.strip1{
+    width: 250px;
 }
 
 .item-article>h3{
     padding: 5px;
+    color: #f2f2f2;
+}
+
+.tutor1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.tutor1>h2{
+    margin: 10px;
+    padding: 10px;
+    text-align: start;
+    color: #f2f2f2;
+    font-size: 16px;
+}
+
+.tutor1 .number{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid #f2f2f2;
+    border-radius: 20px;
+    background-color: #005B41;
+}
+
+.tutor2{
+    display: flex;
+    flex-direction: row;
+}
+
+.tutor2>h2{
+    margin: 10px;
+    padding: 10px;
+    text-align: start;
+    color: #f2f2f2;
+    font-size: 16px;
+}
+
+.tutor2 .number{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid #f2f2f2;
+    border-radius: 20px;
+    background-color: #005B41;
+}
+
+.tutor3{
+    display: flex;
+    flex-direction: row;
+}
+
+.tutor3>h2{
+    margin: 10px;
+    padding: 10px;
+    text-align: start;
+    color: #f2f2f2;
+    font-size: 16px;
+}
+
+.tutor3 .number{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid #f2f2f2;
+    border-radius: 20px;
+    background-color: #005B41;
 }
 
 .item-right{
@@ -222,6 +344,7 @@ img {vertical-align: middle;}
     /* margin-left: 8px; */
     border: 1px solid black;
     border-radius: 4px;
+    padding-left: 5px;
 }
 
 .item-form>select{
